@@ -1,0 +1,23 @@
+info: socket.io started
+Express server listening on port \\.\pipe\6faf3271-1d83-45fd-99eb-42f00bb35321
+[90mGET / [32m200 [90m2198ms - 833b[0m
+debug: served static content /socket.io.js
+[90mGET / [32m200 [90m70ms - 833b[0m
+[90mGET / [32m200 [90m198ms - 3.52kb[0m
+[90mGET / [36m304 [90m145ms[0m
+debug: served static content /socket.io.js
+debug: served static content /socket.io.js
+[90mGET /xuxu [31m500 [90m6ms[0m
+[90mGET /xuxu [31m500 [90m4ms[0m
+[90mGET /js/waypoints.min.js [31m500 [90m3ms[0m
+[90mGET /js/waypoints.min.js [31m500 [90m4ms[0m
+[90mGET /js/jquery.knob.js [31m500 [90m3ms[0m
+[90mGET /js/jquery.knob.js [31m500 [90m4ms[0m
+[90mGET /js/jquery.easing.1.3.js [31m500 [90m5ms[0m
+[90mGET /js/jquery.easing.1.3.js [31m500 [90m4ms[0m
+[90mGET /js/bootstrap.min.js [31m500 [90m4ms[0m
+[90mGET /js/bootstrap.min.js [31m500 [90m5ms[0m
+[90mGET /js/main.js [31m500 [90m4ms[0m
+[90mGET /js/main.js [31m500 [90m26ms[0m
+[90mGET /xuxu [31m500 [90m4ms[0m
+[90mGET /xuxu [31m500 [90m4ms[0m

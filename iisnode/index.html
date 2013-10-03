@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>iisnode logs</title>
+    <style type="text/css">
+        body
+        {
+            font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+        td, th
+        {
+            border: 1px solid lightgray;
+            padding: 3px 7px 2px 7px;
+        }
+        th
+        {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: Gray;
+            color: #ffffff;
+        }
+        td.stderr
+        {
+            color: Red;
+        }
+    </style>
+</head>
+<body>
+    <table id="logFilesTable">
+        <tr>
+            <th>
+                Computer name
+            </th>
+            <th>
+                PID
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Created
+            </th>
+            <th>
+                Link
+            </th>
+        </tr>
+    </table>
+    <p id="lastUpdated"></p>
+    <script type="text/javascript">
+
+        // this is replaced with actual data at runtime by code in interceptor.js
+        var logFiles = [{"file":"DEIVIS-DESK-47228-stderr-1380767575487.txt","computername":"DEIVIS-DESK","pid":47228,"type":"stderr","created":1380767575487},{"file":"DEIVIS-DESK-47228-stdout-1380767575483.txt","computername":"DEIVIS-DESK","pid":47228,"type":"stdout","created":1380767575483},{"file":"DEIVIS-DESK-58636-stderr-1380403481326.txt","computername":"DEIVIS-DESK","pid":58636,"type":"stderr","created":1380403481326},{"file":"DEIVIS-DESK-58636-stdout-1380403481323.txt","computername":"DEIVIS-DESK","pid":58636,"type":"stdout","created":1380403481323},{"file":"DEIVIS-DESK-60608-stdout-1380400843230.txt","computername":"DEIVIS-DESK","pid":60608,"type":"stdout","created":1380400843230},{"file":"DEIVIS-DESK-60936-stderr-1380407211513.txt","computername":"DEIVIS-DESK","pid":60936,"type":"stderr","created":1380407211513},{"file":"DEIVIS-DESK-60936-stdout-1380407211512.txt","computername":"DEIVIS-DESK","pid":60936,"type":"stdout","created":1380407211512},{"file":"DEIVIS-DESK-71824-stderr-1380581506169.txt","computername":"DEIVIS-DESK","pid":71824,"type":"stderr","created":1380581506169},{"file":"DEIVIS-DESK-71824-stdout-1380581506166.txt","computername":"DEIVIS-DESK","pid":71824,"type":"stdout","created":1380581506166},{"file":"DEIVIS-DESK-72920-stderr-1380499550711.txt","computername":"DEIVIS-DESK","pid":72920,"type":"stderr","created":1380499550711},{"file":"DEIVIS-DESK-72920-stdout-1380499550710.txt","computername":"DEIVIS-DESK","pid":72920,"type":"stdout","created":1380499550710},{"file":"DEIVIS-DESK-83312-stdout-1380403527282.txt","computername":"DEIVIS-DESK","pid":83312,"type":"stdout","created":1380403527282},{"file":"DEIVIS-DESK-92016-stderr-1380501579799.txt","computername":"DEIVIS-DESK","pid":92016,"type":"stderr","created":1380501579799},{"file":"DEIVIS-DESK-92016-stdout-1380501579794.txt","computername":"DEIVIS-DESK","pid":92016,"type":"stdout","created":1380501579794}];
+        var lastUpdated = 1380767579981;
+        var date = new Date();
+
+        date.setTime(lastUpdated);
+        document.getElementById('lastUpdated').innerHTML = 'Index was last updated ' + date;
+
+        logFiles.sort(function (a, b) {
+            return b.created - a.created;
+        });
+
+        var logFilesTable = document.getElementById("logFilesTable");
+        for (var i = 0; i < logFiles.length; i++) {
+            var logFile = logFiles[i];
+            date.setTime(logFile.created);
+            var row = logFilesTable.insertRow(-1);
+            var computerNameCell = row.insertCell(0);
+            var pidCell = row.insertCell(1);
+            var typeCell = row.insertCell(2);
+            var dateCell = row.insertCell(3);
+            var logCell = row.insertCell(4);
+            computerNameCell.innerHTML = logFile.computername;
+            pidCell.innerHTML = logFile.pid.toString();
+            typeCell.innerHTML = logFile.type;
+            typeCell.setAttribute('class', logFile.type);
+            dateCell.innerHTML = date.toString();
+            logCell.innerHTML = '<a href="' + logFile.file + '">log</a>';
+        };
+
+    </script>
+</body>
+</html>

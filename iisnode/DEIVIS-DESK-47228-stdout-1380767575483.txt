@@ -1,0 +1,6 @@
+info: socket.io started
+Express server listening on port \\.\pipe\069d0797-9cf1-4121-97d4-8800312a6c10
+[90mGET / [32m200 [90m2153ms - 3.56kb[0m
+debug: served static content /socket.io.js
+[90mGET /xuxu [31m500 [90m5ms[0m
+[90mGET / [36m304 [90m119ms[0m

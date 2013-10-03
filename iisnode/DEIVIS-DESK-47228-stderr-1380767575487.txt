@@ -1,0 +1,15 @@
+C:\Users\deivis\Documents\My Web Sites\WebCandy\views\principal\index.jade, line 103:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+Error: `secret` option required for sessions
+    at Object.session [as handle] (C:\Users\deivis\Documents\My Web Sites\WebCandy\node_modules\express\node_modules\connect\lib\middleware\session.js:228:24)
+    at next (C:\Users\deivis\Documents\My Web Sites\WebCandy\node_modules\express\node_modules\connect\lib\proto.js:190:15)
+    at pass (C:\Users\deivis\Documents\My Web Sites\WebCandy\node_modules\express\lib\router\index.js:107:24)
+    at Router._dispatch (C:\Users\deivis\Documents\My Web Sites\WebCandy\node_modules\express\lib\router\index.js:170:5)
+    at Object.router (C:\Users\deivis\Documents\My Web Sites\WebCandy\node_modules\express\lib\router\index.js:33:10)
+    at next (C:\Users\deivis\Documents\My Web Sites\WebCandy\node_modules\express\node_modules\connect\lib\proto.js:190:15)
+    at Object.methodOverride [as handle] (C:\Users\deivis\Documents\My Web Sites\WebCandy\node_modules\express\node_modules\connect\lib\middleware\methodOverride.js:37:5)
+    at next (C:\Users\deivis\Documents\My Web Sites\WebCandy\node_modules\express\node_modules\connect\lib\proto.js:190:15)
+    at multipart (C:\Users\deivis\Documents\My Web Sites\WebCandy\node_modules\express\node_modules\connect\lib\middleware\multipart.js:67:61)
+    at C:\Users\deivis\Documents\My Web Sites\WebCandy\node_modules\express\node_modules\connect\lib\middleware\bodyParser.js:57:9
+C:\Users\deivis\Documents\My Web Sites\WebCandy\views\principal\index.jade, line 103:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.

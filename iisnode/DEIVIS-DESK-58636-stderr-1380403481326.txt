@@ -1,0 +1,17 @@
+Error: C:\Users\deivis\Documents\My Web Sites\WebCandy\views\principal\index.jade:1
+  > 1| extends layout
+    2| 
+    3| block content
+    4|   h1= title
+
+ENOENT, no such file or directory 'C:\Users\deivis\Documents\My Web Sites\WebCandy\views\principal\layout.jade'
+    at Object.fs.openSync (fs.js:427:18)
+    at Object.fs.readFileSync (fs.js:284:15)
+    at Object.Parser.parseExtends (C:\Users\deivis\Documents\My Web Sites\WebCandy\node_modules\jade\lib\parser.js:424:18)
+    at Object.Parser.parseExpr (C:\Users\deivis\Documents\My Web Sites\WebCandy\node_modules\jade\lib\parser.js:211:21)
+    at Object.Parser.parse (C:\Users\deivis\Documents\My Web Sites\WebCandy\node_modules\jade\lib\parser.js:134:25)
+    at parse (C:\Users\deivis\Documents\My Web Sites\WebCandy\node_modules\jade\lib\jade.js:93:62)
+    at Object.exports.compile (C:\Users\deivis\Documents\My Web Sites\WebCandy\node_modules\jade\lib\jade.js:142:9)
+    at Object.exports.render (C:\Users\deivis\Documents\My Web Sites\WebCandy\node_modules\jade\lib\jade.js:196:15)
+    at Object.exports.renderFile (C:\Users\deivis\Documents\My Web Sites\WebCandy\node_modules\jade\lib\jade.js:233:18)
+    at View.exports.renderFile [as engine] (C:\Users\deivis\Documents\My Web Sites\WebCandy\node_modules\jade\lib\jade.js:218:21)

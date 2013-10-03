@@ -1,0 +1,27 @@
+{
+  "name": "WebCandy",
+  "version": "0.1.0",
+  "author": "Deivis",
+  "description": "Aplicação para compartilhamento e arrecadação de doces",
+  "contributors": [
+    {
+      "name": "Deivis",
+      "email": "deivis.dcw@gmail.com"
+    }
+  ],
+  "main": "./server.js",
+  "keywords": [
+    "boilerplate",
+    "express"
+  ],
+  "dependencies": {
+    "jade": "*",
+    "socket.io": "~0.9.13",
+    "express": "~3.1.0"
+  },
+  "noAnalyze": true,
+  "license": "Apache",
+  "engines": {
+    "node": ">=0.6.14"
+  }
+}
